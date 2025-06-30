@@ -33,6 +33,7 @@ nav {
   display: flex;
   height: 100px;
 }
+
 #links {
   align-items: center;
   list-style:none;
@@ -42,6 +43,7 @@ nav {
   margin: 0 5%;
   gap: 5%;
 }
+
 li a {
   border:1px solid #00ffcc;
   font-size: x-large;
@@ -56,6 +58,7 @@ li a:hover {
   background:#00ffcc;
   border-color:black;
 }
+
 #logo {
   height: 100px;
   margin-left: 2.5%;
@@ -68,16 +71,19 @@ li a:hover {
 }
 
 .win-terminal {
-  background: rgba(10, 10, 10, 1);
+  background: rgba(10, 10, 10, 0.9);
   border: 1px solid #00ffcc;
   border-radius: 4px;
   box-shadow: 0 0 20px rgba(0, 255, 204, 0.15);
   backdrop-filter: blur(4px);
-  height: fit-content;
   opacity: 0;
   transform: translateX(-60px);
-  transition: all 0.6s ease-out;
-  max-width: 50%;
+  transition: all 0.5s ease-out;
+  width: 100%;
+  line-height: 1.5;
+  min-height: 400px;
+  height: fit-content;
+  margin-top: 80%;
 }
 
 .win-terminal.visible {
@@ -100,23 +106,30 @@ li a:hover {
 }
 
 .win-terminal-body {
-  padding: 1rem 1.25rem;
-  font-size: 0.85rem;
+  padding: 2rem;
+  font-size: 1.1rem;
   color: #00ffcc;
+  position: relative;
+  overflow: visible;
 }
+
 .terminal-img {
   border: 1px solid #00ffcc;
-  max-width: 500px;
+  width: 100%;
+  max-width: 700px;
   opacity: 0;
   transform: translateX(100px);
-  transition: all 0.6s ease-out;
+  transition: all 0.5s ease-out;
   display: flex;
   flex-direction: column;
   height: fit-content;
+  max-height: 0;
 }
+
 #Ty {
   border: 1px solid #00ffcc;
 }
+
 .wys {
   max-height: 450px;
   width: 100%;
@@ -125,6 +138,8 @@ li a:hover {
 .terminal-img.visible{
   opacity: 1;
   transform: translateX(0);
+  max-height: 1000px;
+  margin: 5% auto;
 }
 
 .container {
@@ -138,20 +153,29 @@ li a:hover {
 .container:first-of-type {
   margin: 80% auto;
 }
+
 .img-grid {
   display: grid;
   grid-template-areas:
     "a b"
     "c d";
   grid-gap: 5rem;
+  justify-items: center;
+  width: fit-content;
+  margin: 0 auto;
 }
+
 .img-grid2 {
   display: grid;
   grid-template-areas:
     "a b"
     "c d";
   grid-gap: 5rem;
+    justify-items: center;
+  width: fit-content;
+  margin: 0 auto;
 }
+
 .terminal-line {
   display: flex;
   align-items: center;
@@ -173,6 +197,7 @@ li a:hover {
   color: #7dd3fc;
   cursor: pointer;
 }
+
 #long {
   max-width: 1250px;
   max-height: 500px;
@@ -181,17 +206,20 @@ li a:hover {
   display: flex;
   flex-direction: column;  
 }
+
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 input, textarea {
   color:#00ffcc;
   background:inherit;
   border: 1px solid #00ffcc;
   width: 50%
 }
+
 button {
   color: rgba(10, 10, 10, 1);
   background:#00ffcc;
@@ -200,21 +228,41 @@ button {
   margin: 5% auto;
   transition: all 0.2s ease;
 }
+
 button:hover {
   color:#00ffcc;
   background: rgba(10, 10, 10, 1);
   border: 1px solid #00ffcc;
   cursor: pointer;
 }
+
 .contact {
-  margin: 10% auto;
+  margin: 40% auto 10% auto;
   max-width: 750px;
 }
+
 #calc, #Ty {
   max-width:fit-content;
   justify-self: center;
+  justify-items: center;
+  width: fit-content;
+  margin: 0 auto;
 }
+
 p {
   justify-content: left;
   text-align: left;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0;
 }

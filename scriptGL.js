@@ -68,25 +68,29 @@ let targetHueOffset = 0.0;
 const terminals = document.querySelectorAll('.win-terminal');
 const lines = document.querySelectorAll('.terminal-line.clickable');
 const images = document.querySelectorAll('.terminal-img');
+const overlay = document.getElementById('overlay');
 
-/* Zoom/Hue Offset & Terminal Reveal */
+/* Zoom/Hue Offset, Overlay & Terminal Reveal */
 window.addEventListener('scroll', () => {
   const scrollY = window.scrollY;
   targetZoom = Math.exp(scrollY / 1000);
-  targetHueOffset = (scrollY / 8500) % 1;
+  targetHueOffset = (scrollY / 10500) % 1;
 
   const windowBottom = scrollY + window.innerHeight;
+  let anyTerminalVisible = false;
 
   terminals.forEach((terminal) => {
     const terminalTop = terminal.offsetTop;
     const terminalBottom = terminalTop + terminal.offsetHeight;
+    const isVisible = windowBottom > terminalTop && scrollY < terminalBottom;
+    
+    terminal.classList.toggle('visible', isVisible);
 
-    if (windowBottom > terminalTop && scrollY < terminalBottom) {
-      terminal.classList.add('visible');
-    } else {
-      terminal.classList.remove('visible');
+    if (isVisible) {
+      anyTerminalVisible = true;
     }
   })
+  overlay.style.opacity = anyTerminalVisible ? '1' : '0'
 });
 
 function animate() {
