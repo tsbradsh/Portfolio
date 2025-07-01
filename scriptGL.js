@@ -73,7 +73,7 @@ const overlay = document.getElementById('overlay');
 /* Zoom/Hue Offset, Overlay & Terminal Reveal */
 window.addEventListener('scroll', () => {
   const scrollY = window.scrollY;
-  targetZoom = Math.exp(scrollY / 1000);
+  targetZoom = Math.exp(scrollY / 2000);
   targetHueOffset = (scrollY / 10500) % 1;
 
   const windowBottom = scrollY + window.innerHeight;
