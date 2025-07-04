@@ -74,7 +74,7 @@ const overlay = document.getElementById('overlay');
 window.addEventListener('scroll', () => {
   const scrollY = window.scrollY;
   targetZoom = Math.exp(scrollY / 2000);
-  targetHueOffset = (scrollY / 10500) % 1;
+  targetHueOffset = (scrollY / 20000) % 1;
 
   const windowBottom = scrollY + window.innerHeight;
   let anyTerminalVisible = false;
@@ -96,7 +96,7 @@ window.addEventListener('scroll', () => {
 function animate() {
   requestAnimationFrame(animate);
   zoom += (targetZoom - zoom) * 0.05;
-  hueOffset += (targetHueOffset - hueOffset) * 0.1;
+  hueOffset += (targetHueOffset - hueOffset) * 0.01;
 
   material.uniforms.uZoom.value = zoom;
   material.uniforms.uHueOffset.value = hueOffset;

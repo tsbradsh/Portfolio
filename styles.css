@@ -81,7 +81,6 @@ li a:hover {
   transition: all 0.5s ease-out;
   width: 100%;
   line-height: 1.5;
-  min-height: 400px;
   height: fit-content;
   margin-top: 80%;
 }
@@ -143,11 +142,7 @@ li a:hover {
 }
 
 .container {
-  display: grid;
-  grid-template-areas: "a b";
   margin-top: 20%;
-  gap: 5%;
-  scroll-margin-top: 300px
 }
 
 .container:first-of-type {
@@ -155,10 +150,7 @@ li a:hover {
 }
 
 .img-grid {
-  display: grid;
-  grid-template-areas:
-    "a b"
-    "c d";
+  display: flex;
   grid-gap: 5rem;
   justify-items: center;
   width: fit-content;
@@ -166,12 +158,9 @@ li a:hover {
 }
 
 .img-grid2 {
-  display: grid;
-  grid-template-areas:
-    "a b"
-    "c d";
+  display: flex;
   grid-gap: 5rem;
-    justify-items: center;
+  justify-items: center;
   width: fit-content;
   margin: 0 auto;
 }
@@ -196,15 +185,6 @@ li a:hover {
   transform: scale(1.2);
   color: #7dd3fc;
   cursor: pointer;
-}
-
-#long {
-  max-width: 1250px;
-  max-height: 500px;
-  justify-self: center;
-  grid-area: d;
-  display: flex;
-  flex-direction: column;  
 }
 
 form {
@@ -241,12 +221,14 @@ button:hover {
   max-width: 750px;
 }
 
-#calc, #Ty {
+#Ty {
   max-width:fit-content;
-  justify-self: center;
-  justify-items: center;
   width: fit-content;
-  margin: 0 auto;
+}
+
+#calc {
+  max-width:fit-content;
+  width: fit-content;
 }
 
 p {
@@ -260,9 +242,12 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(0, 0, 0, 0.45);
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: 0;
+}
+#info, #projects {
+  scroll-margin-top: 300px;
 }
