@@ -15,7 +15,17 @@
     <ul id="links">
       <li><a href="#">HOME</a></li>
       <li><a href="#info">INFO</a></li>
-      <li><a href="#projects">PROJECTS</a></li>
+      <li class="dropdown">
+        <a href="#projects">PROJECTS</a>
+        <svg id="projects-toggle" class="caret-icon" viewBox="0 0 24 24" width="24" height="24">
+          <path d="M6 9l6 6 6-6" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <ul class="dropdown-content">
+          <li><a href="#projects">WHEN YOU SLEEP</a></li>
+          <li><a href="#aimct">AI MUSIC TOOL</a></li>
+          <li><a href="#redclover">RED CLOVER SUGAR STUDIO</a></li>
+        </ul>
+      </li>
       <li><a href="#connect">CONNECT</a></li>
     </ul>
   </nav>
@@ -26,20 +36,20 @@
       <div class="win-terminal-header">
         <span class="win-terminal-title">C:\Users\Tyler\Portfolio\Info</span>
       </div>
-      <div class="win-terminal-body">
-        <span class="label">NAME: "Tyler Bradshaw"</span>
-        <div class="terminal-line clickable" data-value="Hi, I’m Tyler Bradshaw — an artist-driven developer on a mission to empower creative independence. I design intuitive tools and digital experiences that help independent musicians, producers, and visual creatives take full control of their work from start to finish. With roots in both art and tech, my work blends design, development, and storytelling into systems that serve creative freedom — not corporate templates. I believe autonomy is everything. Whether it's writing custom code for music release platforms, designing interfaces for experimental projects, or building one-of-a-kind portfolio sites, I approach each build with a sense of care and persistence. My goal is to make digital spaces feel like they were built by artists, for artists — because they are.">
-          <span class="icon">&#128065;</span>
-          <span class="label">ABOUT:</span>
-        </div>
-        <div class="terminal-reveal"></div>
-      </div>
-      <div id="Ty" class="terminal-img">
-        <div class="win-terminal-header">
-          <span class="win-terminal-title">C:\Users\Tyler\Portfolio\Assets\Self</span>
-        </div>
+      <div class="wingrid">
         <div class="win-terminal-body">
-          <img src="" alt="Tyler Bradshaw">
+          <span class="label">NAME: "Tyler Bradshaw"</span>
+          <div class="terminal-line clickable" data-value="Hi, I’m Tyler Bradshaw — an artist-driven developer on a mission to empower creative independence. I design intuitive tools and digital experiences that help independent musicians, producers, and visual creatives take full control of their work from start to finish. With roots in both art and tech, my work blends design, development, and storytelling into systems that serve creative freedom — not corporate templates. I believe autonomy is everything. Whether it's writing custom code for music release platforms, designing interfaces for experimental projects, or building one-of-a-kind portfolio sites, I approach each build with a sense of care and persistence. My goal is to make digital spaces feel like they were built by artists, for artists — because they are.">
+            <span class="icon">&#128065;</span>
+            <span class="label">ABOUT:</span>
+          </div>
+          <div class="terminal-reveal"></div>
+        </div>
+        <div id="Ty" class="terminal-img">
+          <div class="win-terminal-header">
+            <span class="win-terminal-title">C:\Users\Tyler\Portfolio\Assets\Self</span>
+          </div>
+          <img id="me" src="assets/1x/Ty.jpg" alt="Tyler Bradshaw">
         </div>
       </div>
     </div>
@@ -49,169 +59,175 @@
       <div class="win-terminal-header">
         <span class="win-terminal-title">C:\Users\Tyler\Portfolio\WhenYouSleep</span>
       </div>
-      <div class="win-terminal-body">
-        <span class="label">PROJECT: "Interactive Multimedia Website for When You Sleep (Band)"</span>
-        <div class="terminal-line clickable" data-value="In order to best meet the client’s needs, I set out to build a web presence that embodied our dreamlike, digital-analog aesthetic. The client needed a site that combined visual storytelling, motion graphics, and functionality.">
-          <span class="icon">&#128065;</span>
-          <span class="label">BACKGROUND:</span>
-        </div>
-        <div class="terminal-reveal"></div>
-        <div class="terminal-line clickable" data-value="The client needed a fully responsive, self-managed platform that could handle multiple creative needs: show listings, music streaming, merchandise, and a visual brand rooted in glitchy, surreal identity.">
-          <span class="icon">&#128065;</span>
-          <span class="label">PROBLEM:</span>
-        </div>
-        <div class="terminal-reveal"></div>
-        <div class="terminal-line clickable" data-value="I designed and coded a custom, fully responsive site from scratch using HTML/CSS/JS. The design was based on a dark dreamscape theme, supported by an animated logo which I built using Adobe Creative Cloud software. I integrated a feed for show updates, embedded EP streaming, simulated scroll-based motion blur effects, and linked to an existing storefront.">
-          <span class="icon">&#128065;</span>
-          <span class="label">PROCESS:</span>
-        </div>
-        <div class="terminal-reveal"></div>
-        <div class="terminal-line clickable" data-value="The website became the central hub for the client’s launch and identity. The various members of the band were enamored with the functionality and striking visual effects. It serves as a dynamic live portfolio for their music, visual brand, and merch. The project demonstrated my ability to blend motion design, front-end development, and brand storytelling into a seamless user experience.">
-          <span class="icon">&#128065;</span>
-          <span class="label">RESULTS:</span>
-        </div>
-        <div class="terminal-reveal"></div>
-      </div>
-      <div class="img-grid">
-        <div class="terminal-img">
-          <div class="win-terminal-header">
-            <span class="win-terminal-title">C:\Users\Tyler\Portfolio\Assets\WYS1.png</span>
+      <div class="wingrid">
+        <div class="win-terminal-body">
+          <span class="label">PROJECT: "Interactive Multimedia Website for When You Sleep (Band)"</span>
+          <div class="terminal-line clickable" data-value="In order to best meet the client’s needs, I set out to build a web presence that embodied our dreamlike, digital-analog aesthetic. The client needed a site that combined visual storytelling, motion graphics, and functionality.">
+            <span class="icon">&#128065;</span>
+            <span class="label">BACKGROUND:</span>
           </div>
-          <img class="wys" src="assets/wys/wys.png">
-        </div>
-        <div class="terminal-img">
-          <div class="win-terminal-header">
-            <span class="win-terminal-title">C:\Users\Tyler\Portfolio\Assets\WYS2.png</span>
+          <div class="terminal-reveal"></div>
+          <div class="terminal-line clickable" data-value="The client needed a fully responsive, self-managed platform that could handle multiple creative needs: show listings, music streaming, merchandise, and a visual brand rooted in glitchy, surreal identity.">
+            <span class="icon">&#128065;</span>
+            <span class="label">PROBLEM:</span>
           </div>
-          <img class="wys" src="assets/wys/mockup.png">
-        </div>
-        <div class="terminal-img">
-          <div class="win-terminal-header">
-            <span class="win-terminal-title">C:\Users\Tyler\Portfolio\Assets\WYS3.png</span>
+          <div class="terminal-reveal"></div>
+          <div class="terminal-line clickable" data-value="I designed and coded a custom, fully responsive site from scratch using HTML/CSS/JS. The design was based on a dark dreamscape theme, supported by an animated logo which I built using Adobe Creative Cloud software. I integrated a feed for show updates, embedded EP streaming, simulated scroll-based motion blur effects, and linked to an existing storefront.">
+            <span class="icon">&#128065;</span>
+            <span class="label">PROCESS:</span>
           </div>
-          <img class="wys" src="assets/wys/events.png">
-        </div>
-        <div class="terminal-img">
-          <div class="win-terminal-header">
-            <span class="win-terminal-title">C:\Users\Tyler\Portfolio\Assets\WYS4.png</span>
+          <div class="terminal-reveal"></div>
+          <div class="terminal-line clickable" data-value="The website became the central hub for the client’s launch and identity. The various members of the band were enamored with the functionality and striking visual effects. It serves as a dynamic live portfolio for their music, visual brand, and merch. The project demonstrated my ability to blend motion design, front-end development, and brand storytelling into a seamless user experience.">
+            <span class="icon">&#128065;</span>
+            <span class="label">RESULTS:</span>
           </div>
-          <img class="wys" src="assets/wys/wireframe.jpg">
+          <div class="terminal-reveal"></div>
+        </div>
+        <div class="img-grid">
+          <div class="terminal-img">
+            <div class="win-terminal-header">
+              <span class="win-terminal-title">C:\Users\Tyler\Portfolio\Assets\WYS1.png</span>
+            </div>
+            <img class="wys" src="assets/wys/wys.png">
+          </div>
+          <div class="terminal-img">
+            <div class="win-terminal-header">
+              <span class="win-terminal-title">C:\Users\Tyler\Portfolio\Assets\WYS2.png</span>
+            </div>
+            <img class="wys" src="assets/wys/mockup.png">
+          </div>
+          <div class="terminal-img">
+            <div class="win-terminal-header">
+              <span class="win-terminal-title">C:\Users\Tyler\Portfolio\Assets\WYS3.png</span>
+            </div>
+            <img class="wys" src="assets/wys/events.png">
+          </div>
+          <div class="terminal-img">
+            <div class="win-terminal-header">
+              <span class="win-terminal-title">C:\Users\Tyler\Portfolio\Assets\WYS4.png</span>
+            </div>
+            <img class="wys" src="assets/wys/wireframe.jpg">
+          </div>
         </div>
       </div>
     </div>
   </div>
   <div class="container">
-    <div class="win-terminal">
+    <div class="win-terminal" id="aimct">
       <div class="win-terminal-header">
         <span class="win-terminal-title">C:\Users\Tyler\Portfolio\AIMCT</span>
       </div>
-      <div class="win-terminal-body">
-        <span class="label">PROJECT: "AI Music Collaboration Tool (WIP)</span>
-        <div class="terminal-line clickable" data-value="As part of a self-directed exploration into AI, I began designing a tool that supports human musicianship rather than replacing it. The goal: build a local-first AI assistant trained on personal music styles to enable faster, deeper creative flow.">
-          <span class="icon">&#128065;</span>
-          <span class="label">BACKGROUND:</span>
-        </div>
-        <div class="terminal-reveal"></div>
-        <div class="terminal-line clickable" data-value="Many AI music tools feel generic and disconnected from the art/artist. I wanted something that learned alongside me, adapting to my personal voice/playing style and genre preferences. Privacy and local use were also key.">
-          <span class="icon">&#128065;</span>
-          <span class="label">PROBLEM:</span>
-        </div>
-        <div class="terminal-reveal"></div>
-        <div class="terminal-line clickable" data-value="I started by testing Magenta, MusicGen, and open-source transformer models in a local environment. I mapped out a multi-phase development plan that includes user onboarding and dataset training, song sketching with melody + lyric generation based on past projects, visual feedback and versioning features for iteration, and as a
-long-term goal, pairing with a web interface and stylized GUI for creators. The development is ongoing, but early prototype scripts can generate raw MIDI and text data tailored to my past writing.
-">
-          <span class="icon">&#128065;</span>
-          <span class="label">PROCESS:</span>
-        </div>
-        <div class="terminal-reveal"></div>
-        <div class="terminal-line clickable" data-value="While the tool is still in development, Iʼve established a working proof-of-concept and roadmap for future expansion. It has already shaped my thinking about AIʼs role in songwriting and the potential for human-AI co-creation rooted in an individual identity.">
-          <span class="icon">&#128065;</span>
-          <span class="label">RESULTS:</span>
-        </div>
-        <div class="terminal-reveal"></div>
-      </div>
-      <div class="img-grid2">
-        <div class="terminal-img">
-          <div class="win-terminal-header">
-            <span class="win-terminal-title">C:\Users\Tyler\Portfolio\Assets\</span>
+      <div class="wingrid">
+        <div class="win-terminal-body">
+          <span class="label">PROJECT: "AI Music Collaboration Tool (WIP)</span>
+          <div class="terminal-line clickable" data-value="As part of a self-directed exploration into AI, I began designing a tool that supports human musicianship rather than replacing it. The goal: build a local-first AI assistant trained on personal music styles to enable faster, deeper creative flow.">
+            <span class="icon">&#128065;</span>
+            <span class="label">BACKGROUND:</span>
           </div>
-          <img class="wys" src="assets/AI/Wireframe.png">
-        </div>
-        <div class="terminal-img">
-          <div class="win-terminal-header">
-            <span class="win-terminal-title">C:\Users\Tyler\Portfolio\Assets\</span>
+          <div class="terminal-reveal"></div>
+          <div class="terminal-line clickable" data-value="Many AI music tools feel generic and disconnected from the art/artist. I wanted something that learned alongside me, adapting to my personal voice/playing style and genre preferences. Privacy and local use were also key.">
+            <span class="icon">&#128065;</span>
+            <span class="label">PROBLEM:</span>
           </div>
-          <img class="wys" src="assets/AI/Map.png">
-        </div>
-        <div class="terminal-img">
-          <div class="win-terminal-header">
-            <span class="win-terminal-title">C:\Users\Tyler\Portfolio\Assets\</span>
+          <div class="terminal-reveal"></div>
+          <div class="terminal-line clickable" data-value="I started by testing Magenta, MusicGen, and open-source transformer models in a local environment. I mapped out a multi-phase development plan that includes user onboarding and dataset training, song sketching with melody + lyric generation based on past projects, visual feedback and versioning features for iteration, and as a
+  long-term goal, pairing with a web interface and stylized GUI for creators. The development is ongoing, but early prototype scripts can generate raw MIDI and text data tailored to my past writing.
+  ">
+            <span class="icon">&#128065;</span>
+            <span class="label">PROCESS:</span>
           </div>
-          <img class="wys" src="assets/AI/Flow.png">
-        </div>
-      </div>
-      <div class="img-grid2">
-        <div class="terminal-img" id="long">
-          <div class="win-terminal-header">
-            <span class="win-terminal-title">C:\Users\Tyler\Portfolio\Assets\</span>
+          <div class="terminal-reveal"></div>
+          <div class="terminal-line clickable" data-value="While the tool is still in development, Iʼve established a working proof-of-concept and roadmap for future expansion. It has already shaped my thinking about AIʼs role in songwriting and the potential for human-AI co-creation rooted in an individual identity.">
+            <span class="icon">&#128065;</span>
+            <span class="label">RESULTS:</span>
           </div>
-          <img class="wys" src="assets/AI/Concept.png">
+          <div class="terminal-reveal"></div>
+        </div>
+        <div class="img-grid2">
+          <div class="terminal-img">
+            <div class="win-terminal-header">
+              <span class="win-terminal-title">C:\Users\Tyler\Portfolio\Assets\Wireframe.png</span>
+            </div>
+            <img class="wys" src="assets/AI/Wireframe.png">
+          </div>
+          <div class="terminal-img">
+            <div class="win-terminal-header">
+              <span class="win-terminal-title">C:\Users\Tyler\Portfolio\Assets\Map.png</span>
+            </div>
+            <img class="wys" src="assets/AI/Map.png">
+          </div>
+          <div class="terminal-img" id="flow">
+            <div class="win-terminal-header">
+              <span class="win-terminal-title">C:\Users\Tyler\Portfolio\Assets\Flow.png</span>
+            </div>
+            <img class="wys" src="assets/AI/Flow.png">
+          </div>
+        </div>
+        <div class="img-grid">
+          <div class="terminal-img" id="long">
+            <div class="win-terminal-header">
+              <span class="win-terminal-title">C:\Users\Tyler\Portfolio\Assets\</span>
+            </div>
+            <img class="wys" src="assets/AI/Concept.png">
+          </div>
         </div>
       </div>
     </div>
   </div>
   <div class="container">
-    <div class="win-terminal">
+    <div class="win-terminal" id="redclover">
       <div class="win-terminal-header">
         <span class="win-terminal-title">C:\Users\Tyler\Portfolio\RedClover</span>
       </div>
-      <div class="win-terminal-body">
-        <span class="label">PROJECT: "Small-Business Web Design for Red Clover Sugar Studio"</span>
-        <div class="terminal-line clickable" data-value="Red Clover Sugar Studio is a body hair removal service specializing in sugar waxing, which is a gentle, all-natural alternative to traditional waxing. The studio needed a brand-aligned online presence to educate clients and establish credibility in the wellness space.">
-          <span class="icon">&#128065;</span>
-          <span class="label">BACKGROUND:</span>
-        </div>
-        <div class="terminal-reveal"></div>
-        <div class="terminal-line clickable" data-value="Without an existing web presence, the studio lacked a place to explain their process, offer pre-/post-care information, and connect with potential clients. They needed a professional, soft-spoken website that reflected their philosophy and quality of their services.">
-          <span class="icon">&#128065;</span>
-          <span class="label">PROBLEM:</span>
-        </div>
-        <div class="terminal-reveal"></div>
-        <div class="terminal-line clickable" data-value="I planned the project out through wireframes and iterative development utilizing GIT for version control. I designed and coded the site using HTML, CSS, and JavaScript as part of a holistic branding project. Key focuses included a minimalist, red clover inspired layout emphasizing calm and breathability, informational sections for potential clientele, a polished contact form, and links to external affiliate booking sites.">
-          <span class="icon">&#128065;</span>
-          <span class="label">PROCESS:</span>
-        </div>
-        <div class="terminal-reveal"></div>
-        <div class="terminal-line clickable" data-value="The site (currently live at tsbradsh.github.io/Final-Project) now serves as Red Cloverʼs first professional digital presence. It reinforces the values of the business and gives the studio a polished platform to grow into any e-commerce or booking integrations.">
-          <span class="icon">&#128065;</span>
-          <span class="label">RESULTS:</span>
-        </div>
-        <div class="terminal-reveal"></div>
-      </div>
-      <div class="img-grid2">
-        <div class="terminal-img">
-          <div class="win-terminal-header">
-            <span class="win-terminal-title">C:\Users\Tyler\Portfolio\Assets\RCHome</span>
+      <div class="wingrid">
+        <div class="win-terminal-body">
+          <span class="label">PROJECT: "Small-Business Web Design for Red Clover Sugar Studio"</span>
+          <div class="terminal-line clickable" data-value="Red Clover Sugar Studio is a body hair removal service specializing in sugar waxing, which is a gentle, all-natural alternative to traditional waxing. The studio needed a brand-aligned online presence to educate clients and establish credibility in the wellness space.">
+            <span class="icon">&#128065;</span>
+            <span class="label">BACKGROUND:</span>
           </div>
-          <img class="wys" src="assets/RCSS/Home.png">
-        </div>
-        <div class="terminal-img">
-          <div class="win-terminal-header">
-            <span class="win-terminal-title">C:\Users\Tyler\Portfolio\Assets\RCPalette</span>
+          <div class="terminal-reveal"></div>
+          <div class="terminal-line clickable" data-value="Without an existing web presence, the studio lacked a place to explain their process, offer pre-/post-care information, and connect with potential clients. They needed a professional, soft-spoken website that reflected their philosophy and quality of their services.">
+            <span class="icon">&#128065;</span>
+            <span class="label">PROBLEM:</span>
           </div>
-          <img class="wys" src="assets/RCSS/Palette.png">
-        </div>
-        <div id="calc" class="terminal-img">
-          <div class="win-terminal-header">
-            <span class="win-terminal-title">C:\Users\Tyler\Portfolio\Assets\Calc</span>
+          <div class="terminal-reveal"></div>
+          <div class="terminal-line clickable" data-value="I planned the project out through wireframes and iterative development utilizing GIT for version control. I designed and coded the site using HTML, CSS, and JavaScript as part of a holistic branding project. Key focuses included a minimalist, red clover inspired layout emphasizing calm and breathability, informational sections for potential clientele, a polished contact form, and links to external affiliate booking sites.">
+            <span class="icon">&#128065;</span>
+            <span class="label">PROCESS:</span>
           </div>
-          <img class="wys" src="assets/RCSS/Calculator.png">
-        </div>
-        <div class="terminal-img">
-          <div class="win-terminal-header">
-            <span class="win-terminal-title">C:\Users\Tyler\Portfolio\Assets\Ratio</span>
+          <div class="terminal-reveal"></div>
+          <div class="terminal-line clickable" data-value="The site (currently live at tsbradsh.github.io/Final-Project) now serves as Red Cloverʼs first professional digital presence. It reinforces the values of the business and gives the studio a polished platform to grow into any e-commerce or booking integrations.">
+            <span class="icon">&#128065;</span>
+            <span class="label">RESULTS:</span>
           </div>
-          <img class="wys" src="assets/RCSS/Ratio.png">
+          <div class="terminal-reveal"></div>
+        </div>
+        <div class="img-grid2">
+          <div class="terminal-img">
+            <div class="win-terminal-header">
+              <span class="win-terminal-title">C:\Users\Tyler\Portfolio\Assets\RCHome.png</span>
+            </div>
+            <img class="wys" src="assets/RCSS/Home.png">
+          </div>
+          <div class="terminal-img">
+            <div class="win-terminal-header">
+              <span class="win-terminal-title">C:\Users\Tyler\Portfolio\Assets\RCPalette.png</span>
+            </div>
+            <img class="wys" src="assets/RCSS/Palette.png">
+          </div>
+          <div id="calc" class="terminal-img">
+            <div class="win-terminal-header">
+              <span class="win-terminal-title">C:\Users\Tyler\Portfolio\Assets\Calc.png</span>
+            </div>
+            <img class="wys" src="assets/RCSS/Calculator.png">
+          </div>
+          <div class="terminal-img">
+            <div class="win-terminal-header">
+              <span class="win-terminal-title">C:\Users\Tyler\Portfolio\Assets\Ratio.png</span>
+            </div>
+            <img class="wys" src="assets/RCSS/Ratio.png">
+          </div>
         </div>
       </div> 
     </div>
@@ -221,7 +237,7 @@ long-term goal, pairing with a web interface and stylized GUI for creators. The 
       <span class="win-terminal-title">C:\Users\Tyler\Portfolio\Contact</span>
     </div>
     <div id="connect">
-      <form name="contact" action="" method="POST">
+      <form name="contact" method="POST" data-netlify="true">
         <p class="terminal-line">NAME:</p>
         <input type="text" name="name" required />
         <p class="terminal-line">EMAIL:</p>
@@ -233,4 +249,7 @@ long-term goal, pairing with a web interface and stylized GUI for creators. The 
     </div>
   </div>
 </body>
+<footer>
+  <p>&copy; 2025 Tyler Bradshaw. All rights reserved. </p>
+</footer>
 </html>

@@ -73,8 +73,8 @@ const overlay = document.getElementById('overlay');
 /* Zoom/Hue Offset, Overlay & Terminal Reveal */
 window.addEventListener('scroll', () => {
   const scrollY = window.scrollY;
-  targetZoom = Math.exp(scrollY / 2000);
-  targetHueOffset = (scrollY / 20000) % 1;
+  targetZoom = Math.exp(scrollY / 1300);
+  targetHueOffset = (scrollY / 15000) % 1;
 
   const windowBottom = scrollY + window.innerHeight;
   let anyTerminalVisible = false;
@@ -139,10 +139,24 @@ lines.forEach((line, index) => {
       reveal.style.display = 'block';
       typeText(reveal, `> ${value}`);
       if (image) {
-        setTimeout(() => {
-          image.classList.add('visible');
-        }, value.length * 20 + 50);
+        image.classList.add('visible');
       }
+    }
+  });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const projectDropdown = document.querySelector('.dropdown');
+  const caretIcon = document.getElementById('projects-toggle');
+
+  caretIcon.addEventListener('click', (e) => {
+    e.stopPropagation();
+    projectDropdown.classList.toggle('open');
+  });
+
+  window.addEventListener('click', (e) => {
+    if (!projectDropdown.contains(e.target)) {
+      projectDropdown.classList.remove('open');
     }
   });
 });
