@@ -36,10 +36,12 @@ export default function ContactSection() {
     setStatus('submitting')
 
     try {
+      const params = new URLSearchParams()
+      form.forEach((value, key) => params.append(key, value.toString()))
       const response = await fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(form as unknown as Record<string, string>).toString(),
+        body: params.toString(),
       })
       if (!response.ok) throw new Error('Submission failed')
       setStatus('success')
