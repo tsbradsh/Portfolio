@@ -101,3 +101,46 @@
     margin: var(--space-4) auto;
   }
 }
+
+/* Honeypot — visually hidden but not display:none */
+.honeypot {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+/* Per-field validation error */
+.fieldError {
+  color: var(--color-error);
+  font-size: var(--text-sm);
+  font-family: inherit;
+}
+
+/* Success message */
+.success {
+  color: var(--color-teal);
+  font-size: var(--text-lg);
+  font-family: inherit;
+  text-align: center;
+  padding: var(--space-4) 0;
+  transition: opacity var(--transition-slow);
+}
+
+/* Error banner */
+.errorMessage {
+  color: var(--color-error);
+  font-size: var(--text-base);
+  font-family: inherit;
+  margin-bottom: var(--space-3);
+}
+
+/* Disabled submit button during submission */
+.submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
