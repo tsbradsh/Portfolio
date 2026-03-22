@@ -62,9 +62,9 @@ Plans:
 **Plans**: 3 plans
 
 Plans:
-- [ ] 03-01-PLAN.md — Copy assets, add reveal CSS utilities, create useReveal hook and project/skills data
-- [ ] 03-02-PLAN.md — Build Nav component with hamburger and wire into layout
-- [ ] 03-03-PLAN.md — Build all section components and compose full page
+- [x] 03-01-PLAN.md — Copy assets, add reveal CSS utilities, create useReveal hook and project/skills data
+- [x] 03-02-PLAN.md — Build Nav component with hamburger and wire into layout
+- [x] 03-03-PLAN.md — Build all section components and compose full page
 
 ### Phase 4: Contact Form and Accessibility
 **Goal**: The contact form accepts and delivers submissions via Netlify Forms, all form inputs meet WCAG 2.1 AA standards, and remaining semantic HTML issues are resolved
