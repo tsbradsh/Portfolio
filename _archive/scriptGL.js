@@ -70,7 +70,7 @@ const lines = document.querySelectorAll('.terminal-line.clickable');
 const images = document.querySelectorAll('.terminal-img');
 const overlay = document.getElementById('overlay');
 
-/* Zoom/Hue Offset, Overlay & Terminal Reveal */
+/* Terminal Reveal on Scroll */
 window.addEventListener('scroll', () => {
   const scrollY = window.scrollY;
   targetZoom = Math.exp(scrollY / 1300);
@@ -82,19 +82,24 @@ window.addEventListener('scroll', () => {
   terminals.forEach((terminal) => {
     const terminalTop = terminal.offsetTop;
     const terminalBottom = terminalTop + terminal.offsetHeight;
-    const isVisible = windowBottom > terminalTop && scrollY < terminalBottom;
+    const isVisible = windowBottom > terminalTop + 100 && scrollY < terminalBottom - 100;
     
     terminal.classList.toggle('visible', isVisible);
 
     if (isVisible) {
       anyTerminalVisible = true;
+      // Ensure child images also become visible
+      const projectImages = terminal.querySelectorAll('.terminal-img');
+      projectImages.forEach(img => img.classList.add('visible'));
     }
-  })
-  overlay.style.opacity = anyTerminalVisible ? '1' : '0'
+  });
+  overlay.style.opacity = anyTerminalVisible ? '1' : '0';
 });
 
+let animFrameId;
+
 function animate() {
-  requestAnimationFrame(animate);
+  animFrameId = requestAnimationFrame(animate);
   zoom += (targetZoom - zoom) * 0.05;
   hueOffset += (targetHueOffset - hueOffset) * 0.01;
 
@@ -105,58 +110,92 @@ function animate() {
 }
 animate();
 
+/* Pause animation when tab is not visible */
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden) {
+    cancelAnimationFrame(animFrameId);
+  } else {
+    animate();
+  }
+});
+
 /* Canvas Resizer */
 window.addEventListener('resize', () => {
   renderer.setSize(window.innerWidth, window.innerHeight);
   material.uniforms.uResolution.value.set(window.innerWidth, window.innerHeight);
 });
 
-/* Typewriter animation */
-function typeText(element, text, speed = 5) {
-  element.textContent = '';
-  let i = 0;
-  const interval = setInterval(() => {
-    element.textContent += text[i];
-    i++;
-    if (i === text.length) clearInterval(interval);
-  }, speed);
-}
+document.addEventListener('DOMContentLoaded', () => {
+  /* --- Hamburger nav toggle --- */
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.getElementById('links');
 
+  navToggle.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', isOpen);
+    navToggle.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
+  });
 
-/* Image Reveal */
-
-lines.forEach((line, index) => {
-  const value = line.dataset.value;
-  const reveal = line.nextElementSibling;
-  const image = images[index];
-
-  line.addEventListener('click', () => {
-    if (reveal.style.display === 'block') {
-      reveal.style.display = 'none';
-      reveal.textContent = '';
-      if (image) image.classList.remove('visible');
-    } else {
-      reveal.style.display = 'block';
-      typeText(reveal, `> ${value}`);
-      if (image) {
-        image.classList.add('visible');
-      }
+  // Close nav drawer when a link inside it is clicked
+  navLinks.addEventListener('click', (e) => {
+    if (e.target.tagName === 'A') {
+      navLinks.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+      navToggle.setAttribute('aria-label', 'Open navigation');
     }
   });
-});
 
-document.addEventListener('DOMContentLoaded', () => {
+  /* --- Projects dropdown --- */
   const projectDropdown = document.querySelector('.dropdown');
   const caretIcon = document.getElementById('projects-toggle');
 
+  function openDropdown() {
+    projectDropdown.classList.add('open');
+    caretIcon.setAttribute('aria-expanded', 'true');
+  }
+
+  function closeDropdown() {
+    projectDropdown.classList.remove('open');
+    caretIcon.setAttribute('aria-expanded', 'false');
+  }
+
+  function toggleDropdown() {
+    if (projectDropdown.classList.contains('open')) {
+      closeDropdown();
+    } else {
+      openDropdown();
+    }
+  }
+
   caretIcon.addEventListener('click', (e) => {
     e.stopPropagation();
-    projectDropdown.classList.toggle('open');
+    toggleDropdown();
   });
 
+  // Keyboard support for caret (Enter / Space to toggle, Escape to close)
+  caretIcon.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      toggleDropdown();
+    } else if (e.key === 'Escape') {
+      closeDropdown();
+      caretIcon.focus();
+    }
+  });
+
+  // Close dropdown when clicking outside
   window.addEventListener('click', (e) => {
     if (!projectDropdown.contains(e.target)) {
-      projectDropdown.classList.remove('open');
+      closeDropdown();
+    }
+  });
+
+  // Close nav drawer when clicking outside on mobile
+  window.addEventListener('click', (e) => {
+    if (!navToggle.contains(e.target) && !navLinks.contains(e.target)) {
+      navLinks.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+      navToggle.setAttribute('aria-label', 'Open navigation');
     }
   });
 });
