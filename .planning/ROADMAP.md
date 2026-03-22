@@ -44,7 +44,10 @@ Plans:
   3. On a mobile device, the canvas renders at capped pixel ratio and pauses rendering when scrolled off screen
   4. On a browser with WebGL disabled, a CSS gradient background renders in place of the canvas
   5. The elevated terminal aesthetic is visible — dark cards with teal border glow, no Windows 95 chrome
-**Plans**: TBD
+**Plans**: 1 plan
+
+Plans:
+- [ ] 02-01-PLAN.md — Migrate Three.js Mandelbrot into use client component with scroll animation, fallback, and terminal card class
 
 ### Phase 3: Content, Navigation and Layout
 **Goal**: All site content is present, all placeholder links are live, the site is fully usable on mobile phones, and section reveal animations work without fragile scroll calculations
@@ -88,7 +91,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Infrastructure and Foundation | 0/1 | Planning complete | - |
-| 2. WebGL Canvas Migration | 0/? | Not started | - |
+| 2. WebGL Canvas Migration | 0/1 | Planning complete | - |
 | 3. Content, Navigation and Layout | 0/? | Not started | - |
 | 4. Contact Form and Accessibility | 0/? | Not started | - |
 | 5. SEO, Performance and Launch | 0/? | Not started | - |
