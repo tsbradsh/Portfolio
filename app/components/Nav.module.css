@@ -1,0 +1,223 @@
+/* Nav — sticky responsive navigation */
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--space-10);
+  padding: 0 var(--space-4);
+  background: var(--color-surface-nav);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--color-teal);
+  box-shadow: var(--glow-teal-nav);
+}
+
+.logoGroup {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-shrink: 0;
+}
+
+.logo {
+  display: block;
+  object-fit: contain;
+}
+
+.wordmark {
+  display: block;
+  object-fit: contain;
+}
+
+/* Nav links list */
+.links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Nav link / button */
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-half);
+  font-size: var(--text-sm);
+  font-family: inherit;
+  color: var(--color-teal);
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid var(--color-teal);
+  padding: var(--space-1) var(--space-2);
+  background: transparent;
+  cursor: pointer;
+  transition: background var(--transition-fast), color var(--transition-fast);
+  white-space: nowrap;
+}
+
+.link:hover,
+.link:focus-visible {
+  background: var(--color-teal);
+  color: var(--color-bg);
+}
+
+/* Hamburger button — hidden on desktop */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  min-width: 44px;
+  min-height: 44px;
+  padding: var(--space-1);
+  border: 1px solid var(--color-teal);
+  background: transparent;
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.hamburger:hover {
+  background: var(--color-teal-subtle);
+}
+
+/* Hamburger bars */
+.bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--color-teal);
+  transition: transform 200ms ease, opacity 200ms ease;
+  transform-origin: center;
+  margin: 3px 0;
+}
+
+.barTopOpen {
+  composes: bar;
+  transform: translateY(8px) rotate(45deg);
+}
+
+.barMidOpen {
+  composes: bar;
+  opacity: 0;
+}
+
+.barBotOpen {
+  composes: bar;
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 50;
+}
+
+/* Desktop dropdown */
+.dropdownWrapper {
+  position: relative;
+}
+
+.dropdownTrigger {
+  border: 1px solid var(--color-teal);
+}
+
+.caret {
+  font-size: var(--text-base);
+  line-height: 1;
+}
+
+.dropdownMenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--color-surface);
+  border: 1px solid rgba(0, 255, 204, 0.3);
+  box-shadow: var(--glow-teal);
+  z-index: 110;
+  min-width: 200px;
+  padding: var(--space-1) 0;
+}
+
+.dropdownOpen {
+  display: block;
+}
+
+.dropdownItem {
+  display: block;
+  padding: var(--space-1) var(--space-2);
+  font-size: var(--text-sm);
+  font-family: inherit;
+  color: var(--color-teal);
+  text-decoration: none;
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+.dropdownItem:hover,
+.dropdownItem:focus-visible {
+  background: var(--color-teal);
+  color: var(--color-bg);
+}
+
+/* Mobile-only project links — hidden on desktop */
+.mobileProjectLink {
+  display: none;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .links {
+    position: fixed;
+    top: var(--space-10);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    background: var(--color-bg);
+    z-index: 60;
+    padding: var(--space-4);
+    display: none;
+    overflow-y: auto;
+    gap: var(--space-2);
+  }
+
+  .open {
+    display: flex;
+  }
+
+  .links li {
+    width: 100%;
+  }
+
+  .link {
+    width: 100%;
+    min-height: 44px;
+    justify-content: flex-start;
+  }
+
+  /* Show mobile project links, hide desktop dropdown */
+  .mobileProjectLink {
+    display: list-item;
+  }
+
+  .dropdownWrapper {
+    display: none;
+  }
+
+  .wordmark {
+    display: none;
+  }
+}
