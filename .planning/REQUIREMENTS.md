@@ -7,9 +7,9 @@
 
 ### Foundation
 
-- [ ] **FOUND-01**: Project scaffolds as Next.js 15 App Router with TypeScript and `output: 'export'` configured for Netlify static hosting
-- [ ] **FOUND-02**: CSS Modules design token system established (color, spacing, typography custom properties)
-- [ ] **FOUND-03**: Cascadia Code font loaded via `next/font/local` with correct fallback stack (Consolas, monospace)
+- [x] **FOUND-01**: Project scaffolds as Next.js 15 App Router with TypeScript and `output: 'export'` configured for Netlify static hosting
+- [x] **FOUND-02**: CSS Modules design token system established (color, spacing, typography custom properties)
+- [x] **FOUND-03**: Cascadia Code font loaded via `next/font/local` with correct fallback stack (Consolas, monospace)
 
 ### WebGL
 
@@ -84,9 +84,9 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| FOUND-01 | Phase 1 | Pending |
-| FOUND-02 | Phase 1 | Pending |
-| FOUND-03 | Phase 1 | Pending |
+| FOUND-01 | Phase 1 | Complete |
+| FOUND-02 | Phase 1 | Complete |
+| FOUND-03 | Phase 1 | Complete |
 | WEBGL-01 | Phase 2 | Pending |
 | WEBGL-02 | Phase 2 | Pending |
 | WEBGL-03 | Phase 2 | Pending |

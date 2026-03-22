@@ -32,7 +32,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 1 plan
 
 Plans:
-- [ ] 01-01-PLAN.md — Scaffold Next.js 15 with static export, design tokens, and Cascadia Code font
+- [x] 01-01-PLAN.md — Scaffold Next.js 15 with static export, design tokens, and Cascadia Code font
 
 ### Phase 2: WebGL Canvas Migration
 **Goal**: The Mandelbrot fractal background runs entirely within a React Client Component with no SSR exposure, performs acceptably on mobile, and degrades gracefully when WebGL is unavailable
