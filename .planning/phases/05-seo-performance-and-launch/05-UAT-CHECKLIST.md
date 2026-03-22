@@ -5,53 +5,53 @@
 
 ## Pre-Deployment
 
-- [ ] `npm run build` completes without errors
-- [ ] `npm run lint` passes
-- [ ] `out/` directory contains: index.html, og-image.png, sitemap.xml, robots.txt
+- [x] `npm run build` completes without errors
+- [x] `npm run lint` passes
+- [x] `out/` directory contains: index.html, og-image.png, sitemap.xml, robots.txt
 
 ## Site Loading
 
-- [ ] https://tylerbradshaw.dev loads without errors
-- [ ] WebGL Mandelbrot fractal renders as background
-- [ ] Cascadia Code font loads (no fallback flash visible)
-- [ ] All terminal card sections are visible on scroll
+- [x] https://tylerbradshaw.dev loads without errors
+- [x] WebGL Mandelbrot fractal renders as background
+- [x] Cascadia Code font loads (no fallback flash visible)
+- [x] All terminal card sections are visible on scroll
 
 ## Navigation Links
 
-- [ ] GitHub link resolves to https://github.com/tsbradsh
-- [ ] LinkedIn link resolves to https://www.linkedin.com/in/tsbw/
-- [ ] All nav section anchors scroll to correct sections
-- [ ] Hamburger menu works on mobile viewport
+- [x] GitHub link resolves to https://github.com/tsbradsh
+- [x] LinkedIn link resolves to https://www.linkedin.com/in/tsbw/
+- [x] All nav section anchors scroll to correct sections
+- [x] Hamburger menu works on mobile viewport
 
 ## Project Links
 
-- [ ] When You Sleep repo link resolves to https://github.com/tsbradsh/lucid-eye
-- [ ] Red Clover repo link resolves to https://github.com/tsbradsh/Final-Project
-- [ ] No href="#" placeholder links remain
+- [x] When You Sleep repo link resolves to https://github.com/tsbradsh/lucid-eye
+- [x] Red Clover repo link resolves to https://github.com/tsbradsh/Final-Project
+- [x] No href="#" placeholder links remain
 
 ## Contact Form
 
-- [ ] Contact form fields accept input (name, email, message)
+- [x] Contact form fields accept input (name, email, message)
 - [ ] Form submission succeeds (check Netlify dashboard for new submission)
-- [ ] Validation prevents empty submissions
-- [ ] Honeypot field is hidden from visual users
+- [x] Validation prevents empty submissions
+- [x] Honeypot field is hidden from visual users
 
 ## SEO / Open Graph
 
-- [ ] Test URL at https://www.opengraph.xyz/url/https%3A%2F%2Ftylerbradshaw.dev — title, description, and image preview render correctly
-- [ ] Page source contains <meta property="og:title"> with "Tyler Bradshaw"
-- [ ] Page source contains <meta property="og:image"> with full URL to og-image.png
-- [ ] Page source contains <script type="application/ld+json"> with Person schema
-- [ ] https://tylerbradshaw.dev/sitemap.xml loads valid XML
-- [ ] https://tylerbradshaw.dev/robots.txt loads with correct content
+- [x] Test URL at https://www.opengraph.xyz/url/https%3A%2F%2Ftylerbradshaw.dev — title, description, and image preview render correctly
+- [x] Page source contains <meta property="og:title"> with "Tyler Bradshaw"
+- [x] Page source contains <meta property="og:image"> with full URL to og-image.png
+- [x] Page source contains <script type="application/ld+json"> with Person schema
+- [x] https://tylerbradshaw.dev/sitemap.xml loads valid XML
+- [x] https://tylerbradshaw.dev/robots.txt loads with correct content
 
 ## Lighthouse Audit
 
-- [ ] Run Chrome Lighthouse on https://tylerbradshaw.dev (Desktop mode)
-- [ ] Performance score: 90+
-- [ ] Accessibility score: 90+
-- [ ] Best Practices score: 90+
-- [ ] SEO score: 90+
+- [x] Run Chrome Lighthouse on https://tylerbradshaw.dev (Desktop mode)
+- [x] Performance score: 90+
+- [x] Accessibility score: 90+
+- [x] Best Practices score: 90+
+- [x] SEO score: 90+
 
 ## Sign-Off
 
