@@ -69,13 +69,16 @@ body {
 /* Section reveal animation — D-01, D-02, D-03, D-04 */
 .section-hidden {
   opacity: 0;
-  transform: translateY(24px);
-  transition: opacity var(--transition-slow), transform var(--transition-slow);
+  transform: translateY(36px);
+  transition: opacity 700ms cubic-bezier(0.33, 0, 0.66, 0),
+              transform 700ms cubic-bezier(0.33, 0, 0.66, 0);
 }
 
 .section-visible {
   opacity: 1;
   transform: translateY(0);
+  transition: opacity 700ms cubic-bezier(0.34, 1.06, 0.64, 1),
+              transform 700ms cubic-bezier(0.34, 1.06, 0.64, 1);
 }
 
 /* Focus-visible global — ported from archive */

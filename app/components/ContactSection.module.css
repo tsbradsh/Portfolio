@@ -1,7 +1,8 @@
 .contact {
   padding: var(--space-4);
   max-width: 960px;
-  margin: var(--space-6) auto;
+  margin: var(--space-10) auto;
+  padding-bottom: calc(var(--space-4) + 48px); /* clear fixed footer */
 }
 
 .heading {

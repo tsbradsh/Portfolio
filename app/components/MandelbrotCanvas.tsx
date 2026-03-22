@@ -12,10 +12,11 @@ uniform vec2 uResolution;
 uniform vec2 uPan;
 uniform float uZoom;
 uniform float uHueOffset;
+uniform float uBreath;
 
 int mandelbrot(vec2 c) {
   vec2 z = c;
-  int maxIter = 400;
+  int maxIter = 160;
   int i;
 
   for (i = 0; i < maxIter; i++) {
@@ -40,8 +41,8 @@ void main() {
   vec2 c = uv / uZoom + uPan;
 
   int iter = mandelbrot(c);
-  float t = float(iter) / 400.0;
-  vec3 color = hsv2rgb(vec3(mod(t + uHueOffset, 1.0), 1.0, t < 1.0 ? 1.0 : 0.0));
+  float t = float(iter) / 160.0;
+  vec3 color = hsv2rgb(vec3(mod(t + uHueOffset + uBreath, 1.0), 1.0, t < 1.0 ? 1.0 : 0.0));
 
   gl_FragColor = vec4(color, 1.0);
 }`
@@ -70,8 +71,9 @@ export default function MandelbrotCanvas() {
 
     const uniforms = {
       uZoom: { value: 1.0 },
-      uPan: { value: new THREE.Vector2(-0.743, 0.11) },
+      uPan: { value: new THREE.Vector2(-0.7435, 0.1312) },
       uHueOffset: { value: 0.0 },
+      uBreath: { value: 0.0 },
       uResolution: { value: new THREE.Vector2(window.innerWidth, window.innerHeight) },
     }
     const geometry = new THREE.PlaneGeometry(2, 2)
@@ -83,6 +85,7 @@ export default function MandelbrotCanvas() {
     let targetZoom = 1.0
     let hueOffset = 0.0
     let targetHueOffset = 0.0
+    let breath = 0.0
     let animFrameId: number
 
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
@@ -104,8 +107,10 @@ export default function MandelbrotCanvas() {
       animFrameId = requestAnimationFrame(animate)
       zoom += (targetZoom - zoom) * 0.05
       hueOffset += (targetHueOffset - hueOffset) * 0.01
+      breath += 0.008
       uniforms.uZoom.value = zoom
       uniforms.uHueOffset.value = hueOffset
+      uniforms.uBreath.value = Math.sin(breath) * 0.07
       renderer.render(scene, camera)
     }
 

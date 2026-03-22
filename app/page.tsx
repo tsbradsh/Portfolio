@@ -19,11 +19,18 @@ export default function Home() {
         <ContactSection />
       </ParallaxMain>
       <footer style={{
+        position: 'fixed',
+        bottom: 0,
+        left: 0,
+        right: 0,
         textAlign: 'center',
-        padding: 'var(--space-4)',
+        padding: 'var(--space-2) var(--space-4)',
         fontSize: 'var(--text-sm)',
         color: 'var(--color-blue)',
-        position: 'relative',
+        background: 'rgba(10, 10, 10, 0.85)',
+        backdropFilter: 'blur(6px)',
+        borderTop: '1px solid rgba(0, 255, 204, 0.1)',
+        zIndex: 90,
       }}>
         Tyler Bradshaw &copy; {new Date().getFullYear()}
       </footer>
