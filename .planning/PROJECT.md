@@ -23,12 +23,12 @@ The portfolio must signal technical competence and design sensibility simultaneo
 ### Active
 
 - [x] Full migration to Next.js + TypeScript (replace vanilla HTML/CSS/JS) — Validated in Phase 01: infrastructure-and-foundation
-- [ ] Elevated terminal aesthetic: modern dark cards with subtle teal border glow, no Windows 95 chrome
+- [x] Elevated terminal aesthetic: modern dark cards with subtle teal border glow, no Windows 95 chrome — Validated in Phase 02: webgl-canvas-migration
 - [ ] Fully responsive layout optimized for mobile (currently broken on phones)
 - [ ] Fill all placeholder links: GitHub (https://github.com/tsbradsh), LinkedIn (https://www.linkedin.com/in/tsbw/), When You Sleep repo (https://github.com/tsbradsh/lucid-eye), Red Clover repo (https://github.com/tsbradsh/Final-Project)
 - [ ] Performance optimization: scroll throttling, lazy loading, adaptive WebGL quality
 - [ ] SEO and meta tags (Next.js head, Open Graph, structured data)
-- [ ] WebGL graceful fallback for non-capable browsers and devices
+- [x] WebGL graceful fallback for non-capable browsers and devices — Validated in Phase 02: webgl-canvas-migration
 - [ ] Accessibility fixes: proper form labels, semantic button elements, WCAG 2.1 AA compliance
 
 ### Out of Scope
@@ -41,7 +41,7 @@ The portfolio must signal technical competence and design sensibility simultaneo
 
 ## Context
 
-- **Current stack:** Next.js 16.2.1 App Router, TypeScript strict mode, static export (`output: 'export'`), Three.js 0.183.2 installed. Vanilla files archived to `_archive/`. Phase 01 complete.
+- **Current stack:** Next.js 16.2.1 App Router, TypeScript strict mode, static export (`output: 'export'`), Three.js 0.183.2 installed. Vanilla files archived to `_archive/`. Phases 01–02 complete. `MandelbrotCanvas` React component live, wired into `app/page.tsx`.
 - **Hosting:** Netlify (static), Netlify Forms for contact
 - **Known mobile issues:** Layout breaks on phones; CSS grid breakpoints exist but are insufficient
 - **Known performance concerns:** Unthrottled scroll handler, continuous WebGL render, 400-iteration shader per frame
@@ -62,8 +62,8 @@ The portfolio must signal technical competence and design sensibility simultaneo
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
 | Full Next.js + TypeScript migration over hybrid approach | Clean architecture, proper React patterns, strong hiring signal | ✓ Completed Phase 01 |
-| Keep WebGL Mandelbrot fractal | Technical depth signal, core visual identity | — Pending |
-| Elevated terminal aesthetic (not neutral/minimal) | Distinctive AND polished — stands out vs. generic dev portfolios | — Pending |
+| Keep WebGL Mandelbrot fractal | Technical depth signal, core visual identity | ✓ Completed Phase 02 |
+| Elevated terminal aesthetic (not neutral/minimal) | Distinctive AND polished — stands out vs. generic dev portfolios | ✓ Completed Phase 02 |
 | Next.js over Vite+React | SSG support = better SEO, industry standard for portfolios | — Pending |
 
 ## Evolution
@@ -84,4 +84,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-03-22 — Phase 01 complete*
+*Last updated: 2026-03-22 — Phase 02 complete*
