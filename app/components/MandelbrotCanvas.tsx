@@ -92,7 +92,7 @@ export default function MandelbrotCanvas() {
 
     const onScroll = () => {
       const scrollY = window.scrollY
-      targetZoom = 3.0 * Math.exp(scrollY / 1300)
+      targetZoom = 3.0 * Math.exp(scrollY / 350)
       targetHueOffset = (scrollY / 15000) % 1
     }
     window.addEventListener('scroll', onScroll, { passive: true })
@@ -110,7 +110,7 @@ export default function MandelbrotCanvas() {
       breath += 0.008
       uniforms.uZoom.value = zoom
       uniforms.uHueOffset.value = hueOffset
-      uniforms.uBreath.value = Math.sin(breath) * 0.07
+      uniforms.uBreath.value = Math.sin(breath) * 0.2
       renderer.render(scene, camera)
     }
 

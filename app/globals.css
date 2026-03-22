@@ -69,20 +69,6 @@ body {
   border: 1px solid rgba(0, 255, 204, 0.3);
   box-shadow: var(--glow-teal);
   border-radius: var(--radius-card);
-  -webkit-mask-image: linear-gradient(
-    to bottom,
-    transparent 0,
-    black 52px,
-    black calc(100% - 52px),
-    transparent 100%
-  );
-  mask-image: linear-gradient(
-    to bottom,
-    transparent 0,
-    black 52px,
-    black calc(100% - 52px),
-    transparent 100%
-  );
 }
 
 /* Section reveal animation — D-01, D-02, D-03, D-04 */
