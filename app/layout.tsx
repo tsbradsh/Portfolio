@@ -63,6 +63,13 @@ export default function RootLayout({
     <html lang="en" className={cascadiaCode.variable}>
       <body>
         <JsonLd />
+        {/* Hidden form for Netlify Forms detection — required for JS-framework AJAX submissions */}
+        <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden aria-hidden="true">
+          <input type="text" name="name" />
+          <input type="email" name="email" />
+          <textarea name="message" />
+          <input type="text" name="bot-field" />
+        </form>
         <a href="#main-content" className="skip-link">Skip to main content</a>
         <Nav />
         {children}
