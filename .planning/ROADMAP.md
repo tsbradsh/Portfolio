@@ -89,7 +89,11 @@ Plans:
   2. Sharing the portfolio URL on a platform that reads Open Graph tags (e.g., Slack, LinkedIn) renders a correct title, description, and image preview
   3. The page HTML includes a JSON-LD Person entity with Tyler's name, URL, and social profiles
   4. Contact form submission, all navigation links, and all project links resolve correctly on the live Netlify deployment
-**Plans**: TBD
+**Plans**: 2 plans
+
+Plans:
+- [ ] 05-01-PLAN.md — SEO metadata, JSON-LD Person entity, OG image, sitemap, and robots.txt
+- [ ] 05-02-PLAN.md — Performance pre-check, UAT checklist, and live Netlify deployment verification
 
 ## Progress
 
@@ -102,4 +106,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | 2. WebGL Canvas Migration | 1/1 | Complete   | 2026-03-22 |
 | 3. Content, Navigation and Layout | 0/3 | Planning complete | - |
 | 4. Contact Form and Accessibility | 1/1 | Complete   | 2026-03-22 |
-| 5. SEO, Performance and Launch | 0/? | Not started | - |
+| 5. SEO, Performance and Launch | 0/2 | Planning complete | - |
