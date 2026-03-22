@@ -27,7 +27,7 @@ export default function InfoSection() {
         </div>
         <div className={styles.portrait}>
           <img
-            src="/assets/1x/Ty.jpg"
+            src="/assets/1x/Ty.webp"
             alt="Photo of Tyler Bradshaw"
             className={styles.portraitImg}
           />
