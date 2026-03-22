@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [ ] **Phase 1: Infrastructure and Foundation** - Scaffold Next.js 15 App Router with static export, design tokens, and Cascadia Code font
 - [x] **Phase 2: WebGL Canvas Migration** - Isolate Three.js behind use client boundary, implement scroll animation and graceful fallback (completed 2026-03-22)
 - [ ] **Phase 3: Content, Navigation and Layout** - Build all section components, fill placeholder links, fix mobile layout
-- [ ] **Phase 4: Contact Form and Accessibility** - Netlify Forms integration, WCAG 2.1 AA compliance, semantic HTML fixes
+- [x] **Phase 4: Contact Form and Accessibility** - Netlify Forms integration, WCAG 2.1 AA compliance, semantic HTML fixes (completed 2026-03-22)
 - [ ] **Phase 5: SEO, Performance and Launch** - Metadata API, JSON-LD, Lighthouse 90+, verified Netlify deployment
 
 ## Phase Details
@@ -78,7 +78,7 @@ Plans:
 **Plans**: 1 plan
 
 Plans:
-- [ ] 04-01-PLAN.md — AJAX contact form with Netlify Forms, validation, honeypot, and accessibility verification
+- [x] 04-01-PLAN.md — AJAX contact form with Netlify Forms, validation, honeypot, and accessibility verification
 
 ### Phase 5: SEO, Performance and Launch
 **Goal**: The deployed site scores 90+ on all four Lighthouse categories, is discoverable by search engines and social sharing, and is confirmed working end-to-end on Netlify
@@ -101,5 +101,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | 1. Infrastructure and Foundation | 0/1 | Planning complete | - |
 | 2. WebGL Canvas Migration | 1/1 | Complete   | 2026-03-22 |
 | 3. Content, Navigation and Layout | 0/3 | Planning complete | - |
-| 4. Contact Form and Accessibility | 0/1 | Planning complete | - |
+| 4. Contact Form and Accessibility | 1/1 | Complete   | 2026-03-22 |
 | 5. SEO, Performance and Launch | 0/? | Not started | - |

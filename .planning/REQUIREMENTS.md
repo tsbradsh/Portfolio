@@ -35,10 +35,10 @@
 
 ### Contact & Accessibility
 
-- [ ] **FORM-01**: Contact form submits correctly via Netlify Forms with static Next.js export (hidden seed form in `public/` for Netlify bot detection)
-- [ ] **FORM-02**: All form inputs have visible `<label>` elements paired via `for` attribute (WCAG 2.1 AA compliance)
-- [ ] **FORM-03**: Project dropdown caret replaced with native `<button>` element (removes `<svg role="button">` pattern)
-- [ ] **FORM-04**: All images have meaningful `alt` text
+- [x] **FORM-01**: Contact form submits correctly via Netlify Forms with static Next.js export (hidden seed form in `public/` for Netlify bot detection)
+- [x] **FORM-02**: All form inputs have visible `<label>` elements paired via `for` attribute (WCAG 2.1 AA compliance)
+- [x] **FORM-03**: Project dropdown caret replaced with native `<button>` element (removes `<svg role="button">` pattern)
+- [x] **FORM-04**: All images have meaningful `alt` text
 
 ### SEO & Performance
 
@@ -100,10 +100,10 @@
 | NAV-01 | Phase 3 | Pending |
 | NAV-02 | Phase 3 | Pending |
 | NAV-03 | Phase 3 | Pending |
-| FORM-01 | Phase 4 | Pending |
-| FORM-02 | Phase 4 | Pending |
-| FORM-03 | Phase 4 | Pending |
-| FORM-04 | Phase 4 | Pending |
+| FORM-01 | Phase 4 | Complete |
+| FORM-02 | Phase 4 | Complete |
+| FORM-03 | Phase 4 | Complete |
+| FORM-04 | Phase 4 | Complete |
 | SEO-01 | Phase 5 | Pending |
 | SEO-02 | Phase 5 | Pending |
 | PERF-01 | Phase 5 | Pending |
