@@ -1,1 +1,59 @@
-/* Placeholder - will be replaced in Task 2 */
+/* Phase 1 Design Token System — source: 01-UI-SPEC.md */
+/* All tokens defined on :root. No token defined anywhere else. */
+
+:root {
+  /* Spacing (8px grid — D-05) */
+  --space-half: 4px;
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-6: 48px;
+  --space-8: 64px;
+  --space-10: 80px;
+  --space-16: 128px;
+
+  /* Typography (D-12, D-13, D-14) */
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-lg: 20px;
+  --text-xl: 32px;
+
+  /* Color (D-01, D-02, D-03, D-04) */
+  --color-bg: #0a0a0a;
+  --color-surface: #111111;
+  --color-surface-nav: rgba(10, 10, 10, 0.95);
+  --color-teal: #00ffcc;
+  --color-teal-subtle: rgba(0, 255, 204, 0.15);
+  --color-teal-glow: rgba(0, 255, 204, 0.20);
+  --color-blue: #7dd3fc;
+  --color-error: #ff4d4d;
+
+  /* Glow and border (D-07, D-08, D-09) */
+  --glow-teal: 0 0 8px rgba(0, 255, 204, 0.20);
+  --glow-teal-nav: 0 0 20px rgba(0, 255, 204, 0.15);
+  --radius-card: 4px;
+
+  /* Transitions (D-10, D-11) */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+}
+
+/* Global resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg);
+  color: var(--color-teal);
+  font-family: var(--font-mono), Consolas, 'Courier New', monospace;
+  font-size: var(--text-base);
+  line-height: 1.5;
+}
