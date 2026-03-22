@@ -42,8 +42,8 @@
 
 ### SEO & Performance
 
-- [ ] **SEO-01**: Next.js Metadata API configured with page title, meta description, and Open Graph tags (title, description, image, URL)
-- [ ] **SEO-02**: JSON-LD structured data added for Person entity (name, URL, social profiles)
+- [x] **SEO-01**: Next.js Metadata API configured with page title, meta description, and Open Graph tags (title, description, image, URL)
+- [x] **SEO-02**: JSON-LD structured data added for Person entity (name, URL, social profiles)
 - [ ] **PERF-01**: Lighthouse scores 90+ across all four categories (Performance, Accessibility, Best Practices, SEO) on desktop
 - [ ] **PERF-02**: Netlify static deployment verified working end-to-end: site loads, form submits, all links resolve
 
@@ -104,8 +104,8 @@
 | FORM-02 | Phase 4 | Complete |
 | FORM-03 | Phase 4 | Complete |
 | FORM-04 | Phase 4 | Complete |
-| SEO-01 | Phase 5 | Pending |
-| SEO-02 | Phase 5 | Pending |
+| SEO-01 | Phase 5 | Complete |
+| SEO-02 | Phase 5 | Complete |
 | PERF-01 | Phase 5 | Pending |
 | PERF-02 | Phase 5 | Pending |
 

@@ -92,7 +92,7 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 05-01-PLAN.md — SEO metadata, JSON-LD Person entity, OG image, sitemap, and robots.txt
+- [x] 05-01-PLAN.md — SEO metadata, JSON-LD Person entity, OG image, sitemap, and robots.txt
 - [ ] 05-02-PLAN.md — Performance pre-check, UAT checklist, and live Netlify deployment verification
 
 ## Progress
@@ -106,4 +106,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | 2. WebGL Canvas Migration | 1/1 | Complete   | 2026-03-22 |
 | 3. Content, Navigation and Layout | 0/3 | Planning complete | - |
 | 4. Contact Form and Accessibility | 1/1 | Complete   | 2026-03-22 |
-| 5. SEO, Performance and Launch | 0/2 | Planning complete | - |
+| 5. SEO, Performance and Launch | 1/2 | In Progress|  |

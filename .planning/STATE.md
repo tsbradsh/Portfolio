@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-stopped_at: Completed 04-01-PLAN.md
-last_updated: "2026-03-22T20:42:33.794Z"
+stopped_at: Completed 05-01-PLAN.md
+last_updated: "2026-03-22T22:04:43.628Z"
 progress:
   total_phases: 5
   completed_phases: 4
-  total_plans: 6
-  completed_plans: 6
+  total_plans: 8
+  completed_plans: 7
 ---
 
 # Project State
@@ -19,12 +19,12 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-21)
 
 **Core value:** The portfolio must signal technical competence and design sensibility simultaneously — the WebGL fractal and terminal identity must coexist with professional polish that holds up to recruiter scrutiny.
-**Current focus:** Phase 04 — contact-form-and-accessibility
+**Current focus:** Phase 05 — seo-performance-and-launch
 
 ## Current Position
 
-Phase: 5
-Plan: Not started
+Phase: 05 (seo-performance-and-launch) — EXECUTING
+Plan: 2 of 2
 
 ## Performance Metrics
 
@@ -49,6 +49,7 @@ Plan: Not started
 | Phase 01-infrastructure-and-foundation P01 | 9 | 2 tasks | 15 files |
 | Phase 02-webgl-canvas-migration P01 | 15 | 2 tasks | 4 files |
 | Phase 04 P01 | 3 | 2 tasks | 3 files |
+| Phase 05 P01 | 2 | 2 tasks | 5 files |
 
 ## Accumulated Context
 
@@ -70,6 +71,8 @@ Recent decisions affecting current work:
 - [Phase 04]: Seed form placed in public/contact.html so Netlify build bot detects the form during static export
 - [Phase 04]: Honeypot uses CSS clip pattern not display:none — bots ignoring display:none still caught
 - [Phase 04]: Error state keeps form rendered below banner so user can retry without page reload
+- [Phase 05]: Used sharp Node API (Next.js transitive dep) instead of sharp-cli for OG image resize — avoids version ambiguity
+- [Phase 05]: JsonLd extracted to dedicated Server Component for future reuse and separation of concerns
 
 ### Pending Todos
 
@@ -82,6 +85,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-22T20:38:08.861Z
-Stopped at: Completed 04-01-PLAN.md
+Last session: 2026-03-22T22:04:43.625Z
+Stopped at: Completed 05-01-PLAN.md
 Resume file: None
