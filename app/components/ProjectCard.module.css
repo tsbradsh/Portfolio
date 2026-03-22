@@ -1,0 +1,143 @@
+.card {
+  padding: var(--space-4);
+  max-width: 960px;
+  margin: var(--space-6) auto;
+}
+
+.title {
+  font-size: var(--text-lg);
+  color: var(--color-blue);
+  margin-bottom: var(--space-3);
+  font-weight: 600;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+  align-items: start;
+}
+
+.key {
+  font-weight: 600;
+  color: var(--color-teal);
+  font-size: var(--text-sm);
+}
+
+.body {
+  font-size: var(--text-base);
+  color: var(--color-teal);
+  line-height: 1.5;
+  margin: 0 0 var(--space-2);
+}
+
+.links {
+  margin-top: var(--space-3);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+}
+
+.cta {
+  display: inline-block;
+  border: 1px solid var(--color-teal);
+  color: var(--color-teal);
+  padding: var(--space-1) var(--space-2);
+  text-decoration: none;
+  font-size: var(--text-sm);
+  font-family: inherit;
+  margin-right: var(--space-1);
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+.cta:hover {
+  background: var(--color-teal);
+  color: #0a0a0a;
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  display: block;
+  border-radius: var(--radius-card);
+  border: 1px solid rgba(0, 255, 204, 0.15);
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 1px solid var(--color-teal);
+  color: var(--color-teal);
+  background: rgba(10, 10, 10, 0.8);
+  padding: var(--space-1);
+  font-size: var(--text-base);
+  cursor: pointer;
+  min-width: 36px;
+  min-height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--transition-fast);
+  font-family: inherit;
+}
+
+.arrowLeft {
+  left: var(--space-1);
+}
+
+.arrowRight {
+  right: var(--space-1);
+}
+
+.arrow:hover:not(:disabled) {
+  background: var(--color-teal-subtle);
+}
+
+.arrow:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+/* Dot indicators */
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-1);
+  margin-top: var(--space-1);
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid var(--color-teal);
+  background: transparent;
+  transition: background var(--transition-fast);
+}
+
+.dotActive {
+  background: var(--color-teal);
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: var(--space-3);
+    margin: var(--space-4) auto;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
