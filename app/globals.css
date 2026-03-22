@@ -47,6 +47,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-padding-top: calc(var(--space-10) + var(--space-2)); /* nav height + buffer */
+}
+
 html,
 body {
   margin: 0;
