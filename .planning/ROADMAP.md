@@ -29,7 +29,10 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. CSS custom properties for color, spacing, and typography are defined and usable across all future components
   3. Cascadia Code renders in the browser with no visible font flash or layout shift on page load
   4. TypeScript compiles without errors from a clean checkout
-**Plans**: TBD
+**Plans**: 1 plan
+
+Plans:
+- [ ] 01-01-PLAN.md — Scaffold Next.js 15 with static export, design tokens, and Cascadia Code font
 
 ### Phase 2: WebGL Canvas Migration
 **Goal**: The Mandelbrot fractal background runs entirely within a React Client Component with no SSR exposure, performs acceptably on mobile, and degrades gracefully when WebGL is unavailable
@@ -84,7 +87,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Infrastructure and Foundation | 0/? | Not started | - |
+| 1. Infrastructure and Foundation | 0/1 | Planning complete | - |
 | 2. WebGL Canvas Migration | 0/? | Not started | - |
 | 3. Content, Navigation and Layout | 0/? | Not started | - |
 | 4. Contact Form and Accessibility | 0/? | Not started | - |
