@@ -1,8 +1,8 @@
-# Tyler Bradford Portfolio
+# Tyler Bradshaw Portfolio
 
 ## What This Is
 
-A personal developer portfolio for Tyler Bradford, migrating from a vanilla HTML/CSS/JS codebase to a Next.js + TypeScript application. The site features a distinctive WebGL Mandelbrot fractal background and an elevated terminal aesthetic — monospace type, dark palette, teal accents — modernized to feel intentional and polished rather than retro. Goal is maximum hirability: impressive tech stack, real links, fast load times, and a design that stands out.
+A personal developer portfolio for Tyler Bradshaw, migrating from a vanilla HTML/CSS/JS codebase to a Next.js + TypeScript application. The site features a distinctive WebGL Mandelbrot fractal background and an elevated terminal aesthetic — monospace type, dark palette, teal accents — modernized to feel intentional and polished rather than retro. Goal is maximum hirability: impressive tech stack, real links, fast load times, and a design that stands out.
 
 ## Core Value
 
@@ -22,7 +22,7 @@ The portfolio must signal technical competence and design sensibility simultaneo
 
 ### Active
 
-- [ ] Full migration to Next.js + TypeScript (replace vanilla HTML/CSS/JS)
+- [x] Full migration to Next.js + TypeScript (replace vanilla HTML/CSS/JS) — Validated in Phase 01: infrastructure-and-foundation
 - [ ] Elevated terminal aesthetic: modern dark cards with subtle teal border glow, no Windows 95 chrome
 - [ ] Fully responsive layout optimized for mobile (currently broken on phones)
 - [ ] Fill all placeholder links: GitHub (https://github.com/tsbradsh), LinkedIn (https://www.linkedin.com/in/tsbw/), When You Sleep repo (https://github.com/tsbradsh/lucid-eye), Red Clover repo (https://github.com/tsbradsh/Final-Project)
@@ -41,7 +41,7 @@ The portfolio must signal technical competence and design sensibility simultaneo
 
 ## Context
 
-- **Current stack:** index.html + scriptGL.js + styles.css, Three.js 0.158.0 via CDN, no build step
+- **Current stack:** Next.js 16.2.1 App Router, TypeScript strict mode, static export (`output: 'export'`), Three.js 0.183.2 installed. Vanilla files archived to `_archive/`. Phase 01 complete.
 - **Hosting:** Netlify (static), Netlify Forms for contact
 - **Known mobile issues:** Layout breaks on phones; CSS grid breakpoints exist but are insufficient
 - **Known performance concerns:** Unthrottled scroll handler, continuous WebGL render, 400-iteration shader per frame
@@ -61,7 +61,7 @@ The portfolio must signal technical competence and design sensibility simultaneo
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| Full Next.js + TypeScript migration over hybrid approach | Clean architecture, proper React patterns, strong hiring signal | — Pending |
+| Full Next.js + TypeScript migration over hybrid approach | Clean architecture, proper React patterns, strong hiring signal | ✓ Completed Phase 01 |
 | Keep WebGL Mandelbrot fractal | Technical depth signal, core visual identity | — Pending |
 | Elevated terminal aesthetic (not neutral/minimal) | Distinctive AND polished — stands out vs. generic dev portfolios | — Pending |
 | Next.js over Vite+React | SSG support = better SEO, industry standard for portfolios | — Pending |
@@ -84,4 +84,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-03-21 after initialization*
+*Last updated: 2026-03-22 — Phase 01 complete*
