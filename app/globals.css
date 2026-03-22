@@ -57,3 +57,12 @@ body {
   font-size: var(--text-base);
   line-height: 1.5;
 }
+
+/* Terminal card utility — NAV-04 (Phase 2) */
+/* Reusable by all Phase 3 section components */
+.terminal-card {
+  background-color: var(--color-surface);
+  border: 1px solid rgba(0, 255, 204, 0.3);
+  box-shadow: var(--glow-teal);
+  border-radius: var(--radius-card);
+}
