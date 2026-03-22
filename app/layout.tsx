@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import './globals.css'
+import Nav from './components/Nav'
 
 const cascadiaCode = localFont({
   src: [
@@ -31,7 +32,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={cascadiaCode.variable}>
-      <body>{children}</body>
+      <body>
+        <a href="#main-content" className="skip-link">Skip to main content</a>
+        <Nav />
+        {children}
+      </body>
     </html>
   )
 }
