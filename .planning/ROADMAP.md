@@ -59,7 +59,12 @@ Plans:
   3. A visitor can identify Tyler's name, role, and focus area within 10 seconds of landing on the page
   4. On a phone, all sections are readable and interactive — nothing overflows or breaks layout
   5. The hamburger menu opens, closes, and can be keyboard-navigated correctly on mobile
-**Plans**: TBD
+**Plans**: 3 plans
+
+Plans:
+- [ ] 03-01-PLAN.md — Copy assets, add reveal CSS utilities, create useReveal hook and project/skills data
+- [ ] 03-02-PLAN.md — Build Nav component with hamburger and wire into layout
+- [ ] 03-03-PLAN.md — Build all section components and compose full page
 
 ### Phase 4: Contact Form and Accessibility
 **Goal**: The contact form accepts and delivers submissions via Netlify Forms, all form inputs meet WCAG 2.1 AA standards, and remaining semantic HTML issues are resolved
@@ -92,6 +97,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 |-------|----------------|--------|-----------|
 | 1. Infrastructure and Foundation | 0/1 | Planning complete | - |
 | 2. WebGL Canvas Migration | 1/1 | Complete   | 2026-03-22 |
-| 3. Content, Navigation and Layout | 0/? | Not started | - |
+| 3. Content, Navigation and Layout | 0/3 | Planning complete | - |
 | 4. Contact Form and Accessibility | 0/? | Not started | - |
 | 5. SEO, Performance and Launch | 0/? | Not started | - |
