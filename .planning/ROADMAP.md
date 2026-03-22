@@ -75,7 +75,10 @@ Plans:
   2. All form fields have visible, correctly associated labels that screen readers can announce
   3. The project dropdown caret is a native button element — no SVG acting as a button
   4. All images on the page have meaningful alt text that describes the image content
-**Plans**: TBD
+**Plans**: 1 plan
+
+Plans:
+- [ ] 04-01-PLAN.md — AJAX contact form with Netlify Forms, validation, honeypot, and accessibility verification
 
 ### Phase 5: SEO, Performance and Launch
 **Goal**: The deployed site scores 90+ on all four Lighthouse categories, is discoverable by search engines and social sharing, and is confirmed working end-to-end on Netlify
@@ -98,5 +101,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | 1. Infrastructure and Foundation | 0/1 | Planning complete | - |
 | 2. WebGL Canvas Migration | 1/1 | Complete   | 2026-03-22 |
 | 3. Content, Navigation and Layout | 0/3 | Planning complete | - |
-| 4. Contact Form and Accessibility | 0/? | Not started | - |
+| 4. Contact Form and Accessibility | 0/1 | Planning complete | - |
 | 5. SEO, Performance and Launch | 0/? | Not started | - |
