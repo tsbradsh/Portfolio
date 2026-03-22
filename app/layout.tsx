@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import './globals.css'
 import Nav from './components/Nav'
+import { JsonLd } from './components/JsonLd'
 
 const cascadiaCode = localFont({
   src: [
@@ -21,8 +22,36 @@ const cascadiaCode = localFont({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://tylerbradshaw.dev'),
   title: 'Tyler Bradshaw — Developer Portfolio',
-  description: 'Developer portfolio for Tyler Bradshaw',
+  description: 'Full-Stack Developer portfolio — Tyler Bradshaw. WebGL, React, Next.js, TypeScript.',
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    type: 'website',
+    url: 'https://tylerbradshaw.dev',
+    title: 'Tyler Bradshaw — Developer Portfolio',
+    description: 'Full-Stack Developer portfolio — Tyler Bradshaw. WebGL, React, Next.js, TypeScript.',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Tyler Bradshaw — Full-Stack Developer',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Tyler Bradshaw — Developer Portfolio',
+    description: 'Full-Stack Developer portfolio — Tyler Bradshaw. WebGL, React, Next.js, TypeScript.',
+    images: ['/og-image.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 export default function RootLayout({
@@ -33,6 +62,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={cascadiaCode.variable}>
       <body>
+        <JsonLd />
         <a href="#main-content" className="skip-link">Skip to main content</a>
         <Nav />
         {children}
