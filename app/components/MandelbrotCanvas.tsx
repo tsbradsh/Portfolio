@@ -81,8 +81,8 @@ export default function MandelbrotCanvas() {
     const mesh = new THREE.Mesh(geometry, material)
     scene.add(mesh)
 
-    let zoom = 1.0
-    let targetZoom = 1.0
+    let zoom = 3.0
+    let targetZoom = 3.0
     let hueOffset = 0.0
     let targetHueOffset = 0.0
     let breath = 0.0
@@ -92,7 +92,7 @@ export default function MandelbrotCanvas() {
 
     const onScroll = () => {
       const scrollY = window.scrollY
-      targetZoom = Math.exp(scrollY / 1300)
+      targetZoom = 3.0 * Math.exp(scrollY / 1300)
       targetHueOffset = (scrollY / 15000) % 1
     }
     window.addEventListener('scroll', onScroll, { passive: true })
