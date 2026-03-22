@@ -17,12 +17,12 @@ export default function ProjectCard({ project }: { project: Project }) {
 
       <div className={styles.grid}>
         <div className={styles.text}>
-          <p><span className={styles.key}>BACKGROUND:</span></p>
+          <p><span className={styles.keyHeader}>BACKGROUND:</span></p>
           <p className={styles.body}>{project.background}</p>
 
           <p><span className={styles.key}>TECH STACK:</span> {project.techStack}</p>
 
-          <p><span className={styles.key}>RESULTS:</span></p>
+          <p><span className={styles.keyHeader}>RESULTS:</span></p>
           <p className={styles.body}>{project.results}</p>
 
           {project.links.length > 0 && (

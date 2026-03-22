@@ -1,4 +1,5 @@
 import MandelbrotCanvas from './components/MandelbrotCanvas'
+import ParallaxMain from './components/ParallaxMain'
 import InfoSection from './components/InfoSection'
 import SkillsSection from './components/SkillsSection'
 import ProjectCard from './components/ProjectCard'
@@ -9,14 +10,14 @@ export default function Home() {
   return (
     <>
       <MandelbrotCanvas />
-      <main id="main-content" style={{ position: 'relative' }}>
+      <ParallaxMain>
         <InfoSection />
         <SkillsSection />
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
         <ContactSection />
-      </main>
+      </ParallaxMain>
       <footer style={{
         textAlign: 'center',
         padding: 'var(--space-4)',

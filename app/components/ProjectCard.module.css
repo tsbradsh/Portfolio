@@ -24,6 +24,13 @@
   font-size: var(--text-sm);
 }
 
+.keyHeader {
+  font-weight: 600;
+  color: var(--color-teal);
+  font-size: var(--text-base);
+  letter-spacing: 0.04em;
+}
+
 .body {
   font-size: var(--text-base);
   color: var(--color-teal);

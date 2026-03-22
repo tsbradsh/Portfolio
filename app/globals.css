@@ -51,7 +51,6 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--color-bg);
   color: var(--color-teal);
   font-family: var(--font-mono), Consolas, 'Courier New', monospace;
   font-size: var(--text-base);
