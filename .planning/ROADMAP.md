@@ -13,7 +13,7 @@ A migration from a vanilla HTML/CSS/JS single-page portfolio to Next.js 15 + Typ
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [ ] **Phase 1: Infrastructure and Foundation** - Scaffold Next.js 15 App Router with static export, design tokens, and Cascadia Code font
-- [ ] **Phase 2: WebGL Canvas Migration** - Isolate Three.js behind use client boundary, implement scroll animation and graceful fallback
+- [x] **Phase 2: WebGL Canvas Migration** - Isolate Three.js behind use client boundary, implement scroll animation and graceful fallback (completed 2026-03-22)
 - [ ] **Phase 3: Content, Navigation and Layout** - Build all section components, fill placeholder links, fix mobile layout
 - [ ] **Phase 4: Contact Form and Accessibility** - Netlify Forms integration, WCAG 2.1 AA compliance, semantic HTML fixes
 - [ ] **Phase 5: SEO, Performance and Launch** - Metadata API, JSON-LD, Lighthouse 90+, verified Netlify deployment
@@ -47,7 +47,7 @@ Plans:
 **Plans**: 1 plan
 
 Plans:
-- [ ] 02-01-PLAN.md — Migrate Three.js Mandelbrot into use client component with scroll animation, fallback, and terminal card class
+- [x] 02-01-PLAN.md — Migrate Three.js Mandelbrot into use client component with scroll animation, fallback, and terminal card class
 
 ### Phase 3: Content, Navigation and Layout
 **Goal**: All site content is present, all placeholder links are live, the site is fully usable on mobile phones, and section reveal animations work without fragile scroll calculations
@@ -91,7 +91,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Infrastructure and Foundation | 0/1 | Planning complete | - |
-| 2. WebGL Canvas Migration | 0/1 | Planning complete | - |
+| 2. WebGL Canvas Migration | 1/1 | Complete   | 2026-03-22 |
 | 3. Content, Navigation and Layout | 0/? | Not started | - |
 | 4. Contact Form and Accessibility | 0/? | Not started | - |
 | 5. SEO, Performance and Launch | 0/? | Not started | - |

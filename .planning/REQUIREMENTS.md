@@ -13,11 +13,11 @@
 
 ### WebGL
 
-- [ ] **WEBGL-01**: Three.js migrated from CDN script tag to npm package, isolated in a `'use client'` component initialized inside `useEffect`
-- [ ] **WEBGL-02**: Mandelbrot fragment shader preserved with full TypeScript types; renderer, geometry, and material disposed in `useEffect` cleanup
-- [ ] **WEBGL-03**: Scroll-driven zoom and hue animation implemented via rAF-throttled scroll context (replacing unthrottled scroll listener)
-- [ ] **WEBGL-04**: WebGL graceful fallback renders CSS gradient background on non-capable browsers and devices
-- [ ] **WEBGL-05**: Adaptive quality implemented: device pixel ratio capped at 1.5 on mobile, canvas animation paused via Intersection Observer when off-screen
+- [x] **WEBGL-01**: Three.js migrated from CDN script tag to npm package, isolated in a `'use client'` component initialized inside `useEffect`
+- [x] **WEBGL-02**: Mandelbrot fragment shader preserved with full TypeScript types; renderer, geometry, and material disposed in `useEffect` cleanup
+- [x] **WEBGL-03**: Scroll-driven zoom and hue animation implemented via rAF-throttled scroll context (replacing unthrottled scroll listener)
+- [x] **WEBGL-04**: WebGL graceful fallback renders CSS gradient background on non-capable browsers and devices
+- [x] **WEBGL-05**: Adaptive quality implemented: device pixel ratio capped at 1.5 on mobile, canvas animation paused via Intersection Observer when off-screen
 
 ### Content & Links
 
@@ -31,7 +31,7 @@
 - [ ] **NAV-01**: Layout is fully responsive and functional on mobile phones (fixes current broken mobile layout)
 - [ ] **NAV-02**: Hamburger navigation opens, closes, and keyboard-navigates correctly on mobile
 - [ ] **NAV-03**: Section reveal animations implemented via Intersection Observer (replacing fragile `offsetTop` calculations)
-- [ ] **NAV-04**: Elevated terminal aesthetic applied — minimal dark cards with subtle teal border glow, no Windows 95 title bar chrome
+- [x] **NAV-04**: Elevated terminal aesthetic applied — minimal dark cards with subtle teal border glow, no Windows 95 title bar chrome
 
 ### Contact & Accessibility
 
@@ -87,12 +87,12 @@
 | FOUND-01 | Phase 1 | Complete |
 | FOUND-02 | Phase 1 | Complete |
 | FOUND-03 | Phase 1 | Complete |
-| WEBGL-01 | Phase 2 | Pending |
-| WEBGL-02 | Phase 2 | Pending |
-| WEBGL-03 | Phase 2 | Pending |
-| WEBGL-04 | Phase 2 | Pending |
-| WEBGL-05 | Phase 2 | Pending |
-| NAV-04 | Phase 2 | Pending |
+| WEBGL-01 | Phase 2 | Complete |
+| WEBGL-02 | Phase 2 | Complete |
+| WEBGL-03 | Phase 2 | Complete |
+| WEBGL-04 | Phase 2 | Complete |
+| WEBGL-05 | Phase 2 | Complete |
+| NAV-04 | Phase 2 | Complete |
 | CONT-01 | Phase 3 | Pending |
 | CONT-02 | Phase 3 | Pending |
 | CONT-03 | Phase 3 | Pending |
