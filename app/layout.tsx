@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     description: 'Full-Stack Developer portfolio — Tyler Bradshaw. WebGL, React, Next.js, TypeScript.',
     images: [
       {
-        url: '/og-image.png',
+        url: '/og-image-v2.png',
         width: 1200,
         height: 630,
         alt: 'Tyler Bradshaw — Full-Stack Developer',
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Tyler Bradshaw — Developer Portfolio',
     description: 'Full-Stack Developer portfolio — Tyler Bradshaw. WebGL, React, Next.js, TypeScript.',
-    images: ['/og-image.png'],
+    images: ['/og-image-v2.png'],
   },
   robots: {
     index: true,
